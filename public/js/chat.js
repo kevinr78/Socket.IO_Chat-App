@@ -47,7 +47,7 @@ $("#chat-message").submit((e) => {
     return;
   }
 });
-y;
+
 /* Appending message to chat-box */
 socket.on("message", (item) => {
   console.log(item);
