@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/0000f17b81.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/chat.css" />
+    <title>Socket.IO</title>
+  </head>
+  <body>
+    <section class="container-fluid">
+      <div class="chat-box-container">
+        <div class="chat-update-box">
+          <div class="chat-update-box-date">
+            <span> <i class="fas fa-users fa-x" class="mr-3"></i>Chat App</span>
+            <span id="date"></span>
+          </div>
+          <hr />
+          <div class="chat-update-box-updates"></div>
+        </div>
+        <div class="chat-box">
+          <div class="room-heading-container">
+            <div class="room-name">
+              <span id="room-heading"></span>
+              <span class="users-list"></span>
+            </div>
+            <div class="leave-btn">
+              <a href="index.html" id="leave-room-btn" class="btn btn-light"
+                >Leave Room</a
+              >
+            </div>
+          </div>
+          <div class="messages-container"></div>
+
+          <div class="send-msg-box">
+            <form id="chat-message">
+              <input
+                type=" text"
+                name="message"
+                placeholder=" Enter Message"
+                class="form-control"
+                id="message"
+                autocomplete="off"
+              />
+              <button class="btn btn-light">
+                <i class="far fa-paper-plane fa-md"></i>
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js"
+    integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./js/chat.js"></script>
+</html>

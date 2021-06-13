@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  background: hsla(203, 39%, 44%, 1);
+
+  background: linear-gradient(
+    225deg,
+    hsla(203, 39%, 44%, 1) 0%,
+    hsla(0, 0%, 100%, 1) 55%
+  );
+
+  background: -moz-linear-gradient(
+    225deg,
+    hsla(203, 39%, 44%, 1) 0%,
+    hsla(0, 0%, 100%, 1) 55%
+  );
+
+  background: -webkit-linear-gradient(
+    225deg,
+    hsla(203, 39%, 44%, 1) 0%,
+    hsla(0, 0%, 100%, 1) 55%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#457B9D", endColorstr="#FFFFFF", GradientType=1 );
+  height: 100vh;
+}
+hr {
+  margin: 10px 20px;
+  color: #fff;
+}
+.chat-box-container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: 70px;
+  height: 80%;
+}
+.chat-box-container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.chat-update-box {
+  background-color: #457b9d;
+  overflow-y: auto;
+}
+.chat-update-box-date {
+  padding: 10px;
+  font-weight: bold;
+  border: 2px solid #fff;
+  margin: 20px;
+  color: #fff;
+  border-radius: 5px;
+  width: fit-content;
+  box-shadow: 0px 2px 7px 6px rgba(255, 255, 255, 0.27) inset;
+  -webkit-box-shadow: 0px 2px 7px 6px rgba(255, 255, 255, 0.27) inset;
+  -moz-box-shadow: 0px 2px 7px 6px rgba(255, 255, 255, 0.27) inset;
+}
+.chat-update-box-date i {
+  margin-right: 5px;
+}
+.chat-update-box-date span {
+  margin-right: 20px;
+}
+.chat-box {
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+}
+.room-heading-container {
+  display: flex;
+  background-color: #457b9d;
+  padding: 10px 0 0 10px;
+}
+.room-name {
+  display: flex;
+  flex-direction: column;
+}
+.messages-container {
+  overflow-y: auto;
+  background-color: #fff;
+}
+.send-msg-box {
+  border: 2px solid black;
+  padding: 10px;
+}
+.chat-update-box-updates {
+  width: fit-content;
+  margin: 10px;
+}
+
+.message-update {
+  width: fit-content;
+  height: auto;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+.message-update p {
+  margin-bottom: 0;
+}
+.messages {
+  background-color: #fff;
+}
+.left {
+  text-align: left;
+  margin-right: auto;
+  margin-left: 20px;
+  margin-top: 10px;
+  background-color: #a8dadc;
+}
+.right {
+  margin-right: 20px;
+  margin-top: 10px;
+  text-align: right;
+  margin-left: auto;
+  background-color: #256eff;
+}
+
+.send-msg-box input {
+  max-width: 85%;
+  border-radius: 10px;
+  display: inline;
+  margin-right: 20px;
+}
+#leave-room-btn {
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1200px) {
+  #message {
+    width: 70%;
+  }
+}
